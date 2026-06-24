@@ -38,7 +38,7 @@ export default function Slide5() {
         transition={{ duration: 1 }}
         className="absolute top-20 text-3xl md:text-4xl font-serif text-brand-rosegold/80 z-20"
       >
-        Kepingan Memori
+        Foto Foto Cantik Kamuuuu
       </motion.h2>
 
       <div className="relative w-full max-w-2xl h-[60vh] flex items-center justify-center mt-12">
