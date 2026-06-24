@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #fdf2f8;
+  --color-brand-rose: #fecdd3;
+  --color-brand-rosegold: #b76e79;
+  --color-brand-cream: #fffdd0;
+  --color-brand-dark: #1c1917;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white overflow-hidden m-0 p-0 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] rounded-2xl;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .text-gradient-rose {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-300 via-pink-200 to-rose-100;
+  }
+}
+
+/* Custom Scrollbar for hidden scroll effect */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
